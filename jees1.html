@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>introduction</title>
+</head>
+<body>
+    <div>
+        <p>This is the introduction to  javascript</p>
+        <button onclick="alert('you just click me ')">
+          click me
+        </button>
+        <button onmouseover="alert('you have mouse over me ')">
+            mouse over
+        </button>
+        <button onmouseout="alert('you just mouse out')"
+        >mouse out</button>
+        <button onclick="alert(`the result of the careQuantity is ${cartQuantity}`)">add cart</button>
+        <button type="button" onclick="window.print()">
+            click to print
+        </button>
+        <button onclick="myFunction()">click</button>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="addnum"></p>
+
+        <p onmouseleave="alert('you move your mouse')">moveyourmouse</p>
+    </div>
+
+
+
+
+
+    <script>
+        let x,y,z;
+        x=5;
+        y=6;
+        z = x+y;
+        document.getElementById('addnum').innerHTML = `The value of the addition is :${z}`;
+        function myFunction()
+        {
+            document.getElementById('demo1').innerHTML = "hello all semester one student";
+            document.getElementById('demo2').innerHTML = "how is the preparation for your exam";
+        }
+        
+       let radomNumber= Math.random();
+       console.log(radomNumber);
+        let cartQuantity = 1;
+        cartQuantity++;
+        console.log(cartQuantity);
+    </script>
+</body>
+</html>
+
+javascript introduction
+javascript where to
+    head 
+    body 
+    external[using link,using path, no path ,]
+    
+javascript output
+    innerHTML[document.getElementById()]
+    document.write()
+    window.alert() or alert()
+    console.log()
+    window.print()
+javascript statement
+    let x,y,z; //statement 1
+    x=3; //statement 2
+    x=6; //statement 3
+    z = x+y;  since a computer program is a list of instructions meaning an instrsuction in programming language is called statement
+    A javascript program is a list of programming statement
+javascript statement are compose of of
+    1. Values, 2. operators, 3. Expressions 4. keywords and comments
+semicolon
+    the semicolon end the javascript statement
+javascript code block ..... 
+     the javascript code block are wirten between the opening and closing brace{}
+     example
+     <!-- <button onclick="myFunction()"> click me</button> -->
+     <!--
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+     -->
+     <!-- <script>
+     function myFunction()
+     {
+        document.getElementById('demo1').innerHTML ='hello agaba solomon ';
+        document.getElementById('demo2').innerHTML ='how are you doing';
+     }
+    </script> -->
+
+javascript keywords
+        var : declares a variable 
+        let: declares a block of variable
+        const: declares a block constant 
+        if : marks a block of statements to be execute on a condition
+        switch:marks a block of statements to be execute on different case 
+        for :marks a block of statement to be execute in a loop
+        function:declares a function
+        return:exits a function
+        try:implement eror handling to a block of statement
+        note: javascript keywords are reserved words that can not be used as a name for a varaible
+javascript syntax
+    javascript syntax is the set of rules, how javascript programs are constructed:
+    the javascript syntax defines two types of values 
+        fixed values: 5,56,55.5 and' ibrahim'
+        variable value: let x
+    javascriptoperators
+    javascript keywords
+    case senstivity
+    javascript naming convention 
+     1. camelCase:firstName
+     2. pascal case:FirstName
+     3. kebab case: first-name   
+        hyphens are not    allow in javascript bc they are keyword
+      4. snake case ,using underscore:first_name
+javascript comments
+    // for single line
+    /*  */ for single line comments
+    using comment for prevention of code from running
+javascript variable
+    variables are container for storing data
+        using var
+        using let
+        using const
+        one statement many variables let carNname ="volvo", person = "ibrahim" ,price = 2000
+        
+        value undefined : the variable define without any value will have value undefined
+
+
+    

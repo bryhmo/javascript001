@@ -1,0 +1,86 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-size: sans-serif;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* 
+justify-content
+align-content
+align-items
+ustify-content: space-evenly;
+  justify-content: center;
+  gap: 1rem;
+  align-items: flex-end;
+  align-items: center;
+/* justify-content: flex-end; */
+  /* justify-content: center; */
+  /* justify-content: space-around;
+  justify-content: space-between;
+*/
+
+.container{
+  display: flex;
+  
+  
+  /* align-items: center;
+  justify-content: center; */
+  /* align-items: center; */
+  gap: 1rem;
+  flex-wrap: wrap;
+
+  flex-flow: column wrap;
+  /* align-content: space-around; */
+  /* align-content: center;
+  align-content: flex-end;
+  align-content: flex-start; */
+  /* align-content: baseline; */
+  /* align-content: space-around;
+  align-content: space-evenly; */
+
+  max-width: 800px;
+  min-height: 400px;
+  /* margin-inline: auto; */
+  border: 1px solid black;
+}
+
+.box{
+  /* min-width: 100px; */
+  height: 100px;
+  background-color: #000;
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.5rem;
+  text-align: center;
+
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-basis:100px;
+  /* 
+  flex-basis:300px;
+  flex-grow: 1;
+  flex-shrink: 1; */
+
+  /* flex short hand 
+  
+  flex : grow shrink flex-basis
+  flex: 1 1 150px
+  
+  */
+ 
+}
+.box:nth-child(3){
+  /* flex-grow: 2;
+  flex-shrink: 3; */
+  order: 0;  /* it makes the flex item stays where its staying */
+  order: 1;  /* it moves the flex to the last position of the flex items */
+  order: -1;  /* it move the flex items to the beginng of the all the flex items */
+  /* flex: 2 3 150px */
+}
+/* dont forget order */
